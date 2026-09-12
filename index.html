@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Alex Moriasi Nyong'a, Business Analyst and BBIT student.">
+  <title>Alex Moriasi Nyong'a | Business Analyst</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--navy:#082b59;--blue:#1266b1;--sky:#eaf4ff;--ink:#142238;--muted:#607086;--white:#fff;--line:#d9e4ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.65;background:#f8fafc}
+a{color:inherit;text-decoration:none}.site-header{background:linear-gradient(135deg,#061e40 0%,#0a3d78 58%,#117bc5 100%);color:white;min-height:650px}.nav{max-width:1120px;margin:auto;padding:25px 28px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:1.55rem;font-weight:800;letter-spacing:.08em}.brand span{color:#58b8ff}.nav-links{display:flex;gap:25px;font-size:.9rem;font-weight:600}.nav-links a{opacity:.9}.nav-links a:hover{opacity:1;color:#7dcbff}
+.hero{max-width:1120px;margin:auto;padding:100px 28px 120px;display:grid;grid-template-columns:1.4fr .6fr;gap:70px;align-items:center}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.16em;color:#4da9f4}.hero .eyebrow{color:#8dceff}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.2rem,7vw,6rem);line-height:.98;margin:14px 0 25px;letter-spacing:-.04em}.hero h1 span{font-weight:600}.lead{max-width:680px;font-size:1.15rem;color:#dbeafe}.actions{display:flex;gap:14px;margin-top:35px}.btn{display:inline-block;background:white;color:var(--navy);padding:13px 22px;border-radius:5px;font-weight:700}.btn.ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,.55)}
+.hero-card{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);padding:35px;text-align:center;backdrop-filter:blur(8px)}.monogram{width:145px;height:145px;margin:auto;border-radius:50%;display:grid;place-items:center;border:2px solid #74c8ff;font-size:2.5rem;font-weight:800;letter-spacing:.08em}.hero-card p{font-size:1.2rem;font-weight:700;margin:22px 0 3px}.hero-card small{color:#cce7ff}
+main{background:white}.section{max-width:1120px;margin:auto;padding:95px 28px;display:grid;grid-template-columns:220px 1fr;gap:50px;border-bottom:1px solid var(--line)}.section-label{font-size:.75rem;font-weight:800;letter-spacing:.14em;color:var(--blue);padding-top:8px}.section h2{font-family:'Playfair Display',Georgia,serif;font-size:2.55rem;line-height:1.15;margin:0 0 28px;color:var(--navy)}.section p{color:var(--muted);max-width:820px}
+.timeline{border-left:2px solid #c7dff4;padding-left:30px}.timeline-item{position:relative;padding:0 0 38px}.timeline-item:last-child{padding-bottom:0}.timeline-item:before{content:'';position:absolute;width:11px;height:11px;background:var(--blue);border-radius:50%;left:-37px;top:7px}.year{font-size:.78rem;font-weight:800;color:var(--blue);letter-spacing:.08em;margin-bottom:5px}.timeline h3{margin:0;color:var(--navy);font-size:1.2rem}.timeline p{margin:3px 0}.strong{font-weight:600;color:var(--ink)!important}
+.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.skill-grid span{padding:15px 17px;border:1px solid var(--line);border-radius:6px;background:#fbfdff;font-weight:600;color:#263b55}.skill-grid span:before{content:'✓';color:var(--blue);margin-right:9px}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.knowledge-card{border:1px solid var(--line);padding:21px;border-radius:7px;background:#fbfdff}.knowledge-card b{display:block;color:var(--navy);margin-bottom:7px}.knowledge-card span{font-size:.88rem;color:var(--muted)}
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.qualities{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}.qualities li{color:#31445b}.qualities li:before{content:'•';color:var(--blue);font-weight:bold;margin-right:9px}.availability{background:var(--sky);padding:35px;border-top:4px solid var(--blue)}.availability h3{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;color:var(--navy);margin:7px 0 10px}.availability p{margin:0}
+.contact{background:#071f40;color:white;padding:90px max(28px,calc((100% - 1064px)/2));display:grid;grid-template-columns:220px 1fr;gap:50px}.contact h2{font-family:'Playfair Display',Georgia,serif;font-size:2.8rem;line-height:1.15;max-width:700px;margin:8px 0 35px}.contact .section-label{color:#78c7ff}.contact .eyebrow{color:#78c7ff}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-grid a,.contact-grid div{border:1px solid rgba(255,255,255,.18);padding:20px;color:#e5f2ff}.contact-grid span{display:block;font-size:.68rem;letter-spacing:.14em;color:#78c7ff;font-weight:800;margin-bottom:6px}
+footer{max-width:1120px;margin:auto;padding:28px;color:#68788b;display:flex;justify-content:space-between;gap:25px;font-size:.8rem}footer strong{color:var(--navy)}footer span{color:#8796a8}
+@media(max-width:800px){.nav-links{display:none}.hero{grid-template-columns:1fr;padding-top:65px}.hero-card{max-width:330px}.section,.contact{grid-template-columns:1fr;gap:18px;padding-top:65px;padding-bottom:65px}.knowledge-grid{grid-template-columns:1fr 1fr}.profile-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}footer{display:block}.footer div+div{margin-top:12px}}
+@media(max-width:520px){.hero h1{font-size:3.1rem}.skill-grid,.knowledge-grid,.qualities{grid-template-columns:1fr}.hero{padding-left:20px;padding-right:20px}.nav{padding-left:20px;padding-right:20px}}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="#">AMN<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">BUSINESS ANALYST • BBIT STUDENT</p>
+      <h1>Alex Moriasi<br><span>Nyong'a</span></h1>
+      <p class="lead">Analytical, motivated and technology-focused, with a growing ability to translate business needs into practical information-system solutions.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Let's Connect</a>
+        <a class="btn ghost" href="#skills">Explore Skills</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="monogram">AMN</div>
+      <p>Business Analyst</p>
+      <small>Kirinyaga University • BBIT</small>
+    </div>
+  </section>
+</header>
+
+<main>
+<section id="about" class="section about">
+  <div class="section-label">01 / ABOUT</div>
+  <div>
+    <h2>Building a strong foundation in business & technology.</h2>
+    <p>I am a motivated and analytical individual with a strong interest in business processes, information technology, data analysis and problem-solving. I am developing my professional capabilities through a Bachelor of Business Information Technology at Kirinyaga University.</p>
+    <p>My goal is to apply analytical, communication and technology skills to identify business needs, improve processes and support effective decision-making while continuously developing professionally.</p>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="section-label">02 / EDUCATION</div>
+  <div>
+    <h2>Academic journey</h2>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="year">2025 — 2029</div>
+        <div><h3>Kirinyaga University</h3><p class="strong">Bachelor of Business Information Technology (BBIT)</p><p>Expected completion: 2029</p></div>
+      </article>
+      <article class="timeline-item">
+        <div class="year">2021 — 2024</div>
+        <div><h3>Mote Oguto Second School</h3><p class="strong">Kenya Certificate of Secondary Education (KCSE)</p><p>Grade: B-</p></div>
+      </article>
+      <article class="timeline-item">
+        <div class="year">2016 — 2020</div>
+        <div><h3>Nyamiranga Primary School</h3><p class="strong">Kenya Certificate of Primary Education (KCPE)</p><p>Marks: 342</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="section-label">03 / SKILLS</div>
+  <div>
+    <h2>What I bring</h2>
+    <div class="skill-grid">
+      <span>Business requirements analysis</span>
+      <span>Data analysis & interpretation</span>
+      <span>Problem identification & analysis</span>
+      <span>Business process analysis</span>
+      <span>Report preparation</span>
+      <span>Communication & presentation</span>
+      <span>Critical thinking & decision-making</span>
+      <span>Teamwork & collaboration</span>
+      <span>Stakeholder communication</span>
+      <span>Microsoft Word, Excel & PowerPoint</span>
+      <span>Basic information systems knowledge</span>
+      <span>SDLC knowledge</span>
+      <span>Time management</span>
+    </div>
+  </div>
+</section>
+
+<section id="knowledge" class="section">
+  <div class="section-label">04 / KNOWLEDGE</div>
+  <div>
+    <h2>Academic knowledge</h2>
+    <div class="knowledge-grid">
+      <div class="knowledge-card"><b>Systems Analysis & Design</b><span>Understanding business requirements, systems and solution design.</span></div>
+      <div class="knowledge-card"><b>Object-Oriented Analysis & Design</b><span>Foundations of analysing and modelling information systems.</span></div>
+      <div class="knowledge-card"><b>Database Management</b><span>Foundational knowledge of structured data and database concepts.</span></div>
+      <div class="knowledge-card"><b>Data Structures & Algorithms</b><span>Problem-solving approaches and computational thinking.</span></div>
+      <div class="knowledge-card"><b>Computer Programming</b><span>Programming fundamentals and logical problem-solving.</span></div>
+      <div class="knowledge-card"><b>Information Systems</b><span>Using technology and information to support business operations.</span></div>
+      <div class="knowledge-card"><b>Business Communication</b><span>Clear professional communication and presentation.</span></div>
+      <div class="knowledge-card"><b>Computer Networks</b><span>Foundational concepts in networking and digital communication.</span></div>
+      <div class="knowledge-card"><b>Project & Problem-Solving Techniques</b><span>Structured approaches to identifying and addressing problems.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section profile">
+  <div class="section-label">05 / PROFILE</div>
+  <div class="profile-grid">
+    <div>
+      <h2>Professional qualities</h2>
+      <ul class="qualities">
+        <li>Analytical and logical thinker</li>
+        <li>Hardworking and dependable</li>
+        <li>Fast learner</li>
+        <li>Good communication skills</li>
+        <li>Honest and responsible</li>
+        <li>Detail-oriented</li>
+        <li>Team player</li>
+        <li>Adaptable and willing to learn</li>
+        <li>Able to work under pressure</li>
+      </ul>
+    </div>
+    <div class="availability">
+      <p class="eyebrow">CAREER OBJECTIVE</p>
+      <h3>Ready to learn, contribute and grow.</h3>
+      <p>To obtain a Business Analyst position where I can use my analytical, communication, problem-solving and information technology skills to identify business needs, improve processes and support effective decision-making.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-label">06 / CONTACT</div>
+  <div>
+    <p class="eyebrow">LET'S TALK</p>
+    <h2>Open to opportunities and professional conversations.</h2>
+    <div class="contact-grid">
+      <a href="tel:0769704133"><span>PHONE</span>0769704133</a>
+      <a href="mailto:moriasialex45@gmail.com"><span>EMAIL</span>moriasialex45@gmail.com</a>
+      <div><span>LOCATION</span>Kenya</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>Alex Moriasi Nyong'a</strong><br><span>Business Analyst</span></div>
+  <div>Driven by knowledge • Focused on solutions • Ready to make an impact</div>
+</footer>
+</body>
+</html>
